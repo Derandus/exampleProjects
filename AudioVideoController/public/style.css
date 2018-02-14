@@ -1,0 +1,288 @@
+body {
+    background-color: #262626;
+    max-width: 960px;
+    margin: 0;
+}
+
+#page-wrap {
+    position: absolute;
+    margin: auto;
+    padding-top: 3%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-width: 640px;
+    min-height: 480px;
+}
+
+image {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+input {
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.row {
+    height: 100%;
+    max-width: 33.33%;
+    width: 33.33%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+.panel {
+    margin: auto;
+    height: 50%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.content_box {
+    /*padding: 2%;*/
+    margin: auto;
+    height: 96%;
+    width: 96%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 2px black inset;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.upper_panel .content_box{
+    padding-top: 3%;
+}
+
+.video_canvas {
+    align-self: center;
+    width: 320px;
+    height: 180px;
+}
+
+.color_knob_section {
+    align-self: center;
+    align-items: center;
+    text-align: center;
+}
+.color_knob {
+    align-self: stretch;
+    width: 20%;
+    height: auto;
+}
+
+.slider_container {
+    -webkit-align-content: center;
+    align-items: stretch;
+    width: 100%;
+    height: 10%;
+    margin-top: 2%;
+    /*text-align: center;*/
+    /*margin-left: auto !important;*/
+    /*margin-right: auto !important;*/
+}
+
+#cross_fader {
+    margin-left: 2%;
+    margin-right: auto;
+    width: 96%;
+}
+
+#fader_and_rotary_box {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    display: -webkit-flex;
+    align-content: center;
+    align-items: stretch;
+    align-self: stretch;
+    -webkit-align-content: center;
+    -webkit-align-items: stretch;
+    -webkit-align-self: stretch;
+}
+
+#left_vertical_slider_container {
+    /*margin-left: auto !important;*/
+    /*margin-right: auto !important;*/
+
+    /*margin-left: 5%;*/
+    text-align: center;
+    flex: 1;
+    height: 100%;
+    width: 5%;
+}
+#right_vertical_slider_container {
+    /*margin-left: auto !important;*/
+    /*margin-right: auto !important;*/
+
+    /*margin-right: 5%;*/
+    /*float: right;*/
+    text-align: center;
+    flex: 1;
+    height: 100%;
+}
+
+#left_volume_fader {
+    -webkit-appearance: slider-vertical;
+    width: 50%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#right_volume_fader {
+    -webkit-appearance: slider-vertical;
+    width: 50%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*#volume_panel_left {*/
+    /*width: 10%;*/
+/*}*/
+
+/*#volume_panel_right {*/
+    /*width: 10%;*/
+/*}*/
+
+#master_rotaries {
+    align-self: center;
+    flex: 3;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+
+#master_knob_panel {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    height: 100%;
+}
+
+/*#effect_knob_panel {*/
+    /*align-self: stretch;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*-webkit-flex-direction: row;*/
+    /*height: 40%;*/
+/*}*/
+
+
+#master_volume_knob {
+    max-height: 100%;
+    margin: auto;
+}
+
+.knob {
+    max-height: 100%;
+    max-width: 33%;
+    margin: auto;
+}
+
+.eq_box {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.eq_knob {
+    margin: auto;
+    max-height: 33%;
+    max-width: 100%;
+}
+
+.progress_box {
+    width: 75%;
+    height: 50%;
+}
+
+.track_control_box {
+    width: 75%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.play_pause_button {
+    max-height: 100%;
+    max-width: 30%;
+    margin: auto;
+}
+
+#chroma_button_section {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.chroma_button {
+    align-self: stretch;
+    width: 20%;
+    height: 10%;
+}
+
+#left_toggle_chroma {
+
+}
+
+#right_toggle_chroma {
+    margin-left: auto;
+}
+
+.seek_bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25%;
+    margin-left: 15%;
+    background-color: #4caf50 !important;
+
+    color: white;
+    width: 70%;
+    height: 50%;
+    align-self: center;
+}
+
+
+/*
+#rightSeekBar {
+    height: 30px;
+    background-color: #4CAF50;
+    text-align: center; !* To center it horizontally (if you want) *!
+    color: white;
+}
+*/

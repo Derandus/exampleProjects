@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="../dist/bundle.js" charset="utf-8"></script>
+</head>
+
+<!--<body onload="audioControl1.init('./Assets/Track1.mp3');audioControl2.init('./Assets/Track2.mp3'); vid.eventWindowLoaded();vid2.eventWindowLoaded(); midi.initMidi(); mixedVid.onWindowLoaded()">-->
+<body>
+    <div id="page-wrap">
+        <div class="row" id="left_row">
+            <div class="panel upper_panel" id="left_upper_panel">
+                <div class="content_box">
+                    <canvas class="video_canvas" id="left_video_canvas"></canvas>
+                    <div class="color_knob_section">
+                        <input type="image" src="Assets/knoblogo.png" id="left_tolerance" class="color_knob knob">
+                        <input type="image" src="Assets/knoblogo.png" id="left_red" class="color_knob knob">
+                        <input type="image" src="Assets/knoblogo.png" id="left_green" class="color_knob knob">
+                        <input type="image" src="Assets/knoblogo.png" id="left_blue" class="color_knob knob">
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel lower_panel" id="left_lower_panel">
+                <div class="content_box">
+                    <div id="left_eq_box" class="eq_box">
+                        <input type="image" src="Assets/knoblogo.png" id="eq_left_1" class="eq_knob">
+                        <input type="image" src="Assets/knoblogo.png" id="eq_left_2" class="eq_knob">
+                        <input type="image" src="Assets/knoblogo.png" id="eq_left_3" class="eq_knob">
+                    </div>
+                    <div id="left_progress_box" class="progress_box">
+                        <progress id="leftSeekBar" class="seek_bar" value="0" max="100"></progress>
+                    </div>
+
+                    <div id="left_track_control_box" class="track_control_box">
+                        <!--<input type="image" src="Assets/27185.png" id="left_play" class="play_pause_button" onclick="audioControl1.playOrPauseMusic()">-->
+                        <!--<input type="image" src="Assets/stop-512.png" id="left_stop" class="play_pause_button" onclick="audioControl1.stopMusic()">-->
+                        <input type="image" src="Assets/27185.png" id="left_play" class="play_pause_button">
+                        <input type="image" src="Assets/stop-512.png" id="left_stop" class="play_pause_button">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="mid_row">
+            <div class="panel upper_panel" id="mid_upper_panel">
+                <div class="content_box">
+                    <canvas class="video_canvas" id="middle_video_canvas"></canvas>
+                    <div id="chroma_button_section">
+                        <input type="image" src="Assets/power-512.png" id="left_toggle_chroma" class="chroma_button">
+                        <input type="image" src="Assets/power-512.png" id="right_toggle_chroma" class="chroma_button">
+                    </div>
+                </div>
+            </div>
+            <div class="panel lower_panel" id="mid_lower_panel">
+                <div class="content_box">
+                    <div class="slider_container">
+
+                        <input type="range" id="cross_fader" value="63" min="0"  max="127" step="1">
+                        <!--<input type="range" id="cross_fader" value="63" min="0"  max="127" step="1">-->
+                    </div>
+                    <div id="fader_and_rotary_box">
+                        <div id="left_vertical_slider_container">
+                            <!--<div id="volume_panel_left">-->
+                                <input type="range" id="left_volume_fader" value="80" min="0" max="127" step="1">
+                                <!--<input type="range" id="left_volume_fader" value="80" min="0" max="127" step="1">-->
+                            <!--</div>-->
+                        </div>
+
+                        <div id="master_rotaries">
+                            <div id="master_knob_panel" class="master_knob">
+                                <input type="image" src="Assets/knoblogo.png" id="master_volume_knob">
+                            </div>
+                        </div>
+
+                        <div id="right_vertical_slider_container">
+                            <!--<div id="volume_panel_right">-->
+                                <!--<input type="range" id="right_volume_fader" value="80" min="0" max="127" step="1">-->
+                                <input type="range" id="right_volume_fader" value="80" min="0" max="127" step="1">
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" id="right_row">
+            <div class="panel upper_panel" id="right_upper_panel">
+                <div class="content_box">
+                    <canvas class="video_canvas" id="right_video_canvas"></canvas>
+                    <div class="color_knob_section">
+                        <input type="image" src="Assets/knoblogo.png" id="right_tolerance" class="color_knob knob">
+                        <input type="image" src="Assets/knoblogo.png" id="right_red" class="color_knob knob">
+                        <input type="image" src="Assets/knoblogo.png" id="right_green" class="color_knob knob">
+                        <input type="image" src="Assets/knoblogo.png" id="right_blue" class="color_knob knob">
+                    </div>
+                </div>
+            </div>
+            <div class="panel lower_panel" id="right_lower_panel">
+                <div class="content_box">
+                    <div id="right_progress_box" class="progress_box">
+                        <progress id="rightSeekBar" class="seek_bar" value="0" max="100"></progress>
+                    </div>
+
+                    <div id="right_track_control_box" class="track_control_box">
+                        <input type="image" src="Assets/27185.png" id="right_play" class="play_pause_button">
+                        <input type="image" src="Assets/stop-512.png" id="right_stop" class="play_pause_button">
+                    </div>
+                    <div id="right_eq_box" class="eq_box">
+                        <input type="image" src="Assets/knoblogo.png" id="eq_right_1" class="eq_knob">
+                        <input type="image" src="Assets/knoblogo.png" id="eq_right_2" class="eq_knob">
+                        <input type="image" src="Assets/knoblogo.png" id="eq_right_3" class="eq_knob">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--<div>-->
+    <!--<video id="video" src="Assets/640x360_watermark.mp4" controls="true"/>-->
+<!--</div>-->
+<!--<div>-->
+    <!--<canvas class="can" id="c1"></canvas>-->
+    <!--<canvas class="can" id="c2"></canvas>-->
+<!--</div>-->
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "audivideocontroller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Derandus/AudiVideoController.git"
+  },
+  "author": "Lukas & Moritz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Derandus/AudiVideoController/issues"
+  },
+  "homepage": "https://github.com/Derandus/AudiVideoController#readme"
+}
